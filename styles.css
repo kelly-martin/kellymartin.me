@@ -1,0 +1,11 @@
+#headshot {
+  width: 518px;
+  height: 345px;
+  border-radius:15px;
+}
+
+.col-lg-6 {
+  margin: 0 auto;
+}
+
+.container { margin-top: 30px; }
