@@ -1,11 +1,38 @@
+body {
+  font-family: 'Anaheim', sans-serif !important;
+  color: black !important;
+}
+
+p { font-size: 110%; }
+
+a.navbar-brand {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 170%;
+  text-shadow: -4px 4px rgb(229, 232, 229);
+}
+
+.row div { padding-top: 5px; }
+
 #headshot {
-  width: 518px;
-  height: 345px;
-  border-radius:15px;
+  width: 1000px;
+  height: auto;
+  border-radius: 10px;
 }
 
-.col-lg-6 {
-  margin: 0 auto;
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.container { margin-top: 30px; }
+.footer div.container { text-align: center; }
+
+.footer img {
+  width: 40px;
+  height: 40px;
+  margin: auto 2px;
+}
