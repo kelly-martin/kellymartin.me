@@ -1,22 +1,137 @@
-body {
-  font-family: 'Anaheim', sans-serif !important;
-  color: black !important;
+@media (max-width:767px) {
+  #headshotDiv { margin: 0 auto; }
+  #quickFacts {
+    margin: 0 auto;
+    font-size: 110% !important;
+  }
+}
+
+.stickyNavbar {
+  position: fixed !important;
+  top: 0;
+  width:100%;
+  background-color: white;
+  box-shadow:0 2px 3px rgba(0,0,0, .4);
+  z-index:999;
+}
+
+.stickyNavbar + .container { padding-top: 70px; }
+
+#overrides {
+  font-family: 'Anaheim', sans-serif;
+  color: black;
 }
 
 p { font-size: 110%; }
 
-a.navbar-brand {
+.smaller { font-size: 90%; }
+
+#overrides h2 { font-weight: bold; }
+
+#overrides h4 { font-style: italic; }
+
+#overrides a.navbar-brand {
   font-family: 'Permanent Marker', cursive;
   font-size: 170%;
   text-shadow: -4px 4px rgb(229, 232, 229);
+  color: black;
 }
 
-.row div { padding-top: 5px; }
+#overrides .btn-primary {
+  background-color: #ad3511;
+  border-color: white;
+  font-size: 90%;
+}
+
+#overrides .btn-primary.focus {
+  outline: none;
+  box-shadow:none;
+}
+
+#overrides .btn-primary.active {
+  background-color: #7A0200;
+  border-color: white;
+}
+
+a.nav-link:hover {
+  border-bottom: 2px solid #ad3511;
+}
+
+#overrides p a { color: #ad3511; }
+
+#overrides p a:hover {
+  color: #7A0200;
+  text-decoration: none;
+}
+
+.row { padding: 10px; }
 
 #headshot {
   width: 1000px;
   height: auto;
   border-radius: 10px;
+}
+
+#headshotDiv {
+  margin-left: auto;
+}
+
+#headshot2 {
+  width:250px;
+  height:auto;
+  border-radius: 50%;
+}
+
+#quickFacts {
+  padding: 30px 0 10px 20px;
+  margin-right: auto;
+  font-size: 135%;
+}
+
+.icon { width: 20px; height: 20px; }
+
+#states { width: 600px; height: auto; }
+
+.body { margin-bottom: 100px; }
+
+#mochaMap {
+  margin: 10px 0;
+  width:100%;
+  height:500px;
+}
+
+#mapSearch {
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  font-family: 'Anaheim', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  width: 50%;
+  height: 29px;
+  margin-left: 17px;
+  margin-top: 10px;
+  outline: none;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+}
+
+.title { font-weight: bold; }
+
+#alertDiv { display: none; }
+
+#mocha-map #infowindow-content { display: inline; }
+
+.skillSection {
+  background-color: #ad3511;
+  border-radius: 10px;
+  border:4px solid white;
+  padding-top: 10px;
+  font-size: 110%;
+  color: white;
+  font-weight: bold;
 }
 
 .footer {

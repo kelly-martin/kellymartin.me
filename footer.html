@@ -1,0 +1,47 @@
+<footer class="footer">
+  <div class="container">
+    <a href="https://github.com/kelly-martin" title="Github/kelly-martin" target="_blank">
+      <img src="https://kellymartin.me/files/github.svg"></a>
+    <a href="https://www.codewars.com/users/kelly-martin/" title="Codewars/kelly-martin" target="_blank">
+      <img src="https://kellymartin.me/files/codewars.svg"></a>
+    <a href="https://www.linkedin.com/in/kemartin1/" title="LinkedIn" target="_blank">
+      <img src="https://kellymartin.me/files/linkedin.svg"></a>
+    <a href="https://www.instagram.com/kellymartin.me/" title="Instagram" target="_blank">
+      <img src="https://kellymartin.me/files/instagram.svg"></a>
+    <a href="mailto:kellymartin.me@gmail.com" title="Email">
+      <img src="https://kellymartin.me/files/email.svg"></a>
+  </div>
+</footer>
+
+<script src="https://kellymartin.me/packages/jquery-3.2.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+<script src="https://kellymartin.me/packages/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="https://kellymartin.me/packages/jquery-ui/jquery-ui.js"></script>
+
+<script src="https://kellymartin.me/mochaMap/scripts.js"></script>
+
+<script>
+
+  // makes navbar stick to top of screen when scrolling down the page
+  window.onscroll = function() {
+    if (window.pageYOffset > 0) { $('#navbar').addClass("stickyNavbar"); }
+    else { $('#navbar').removeClass("stickyNavbar"); }
+  };
+
+  // accordion on the 'Web Dev' page
+  $(".accordion").accordion({ collapsible:true, active:false, autoHeight: false });
+
+  // popovers on the 'About Me' page
+  $('[data-toggle="popover"]').popover();
+  $('.popover-dismiss').popover({ trigger: 'focus' });
+
+</script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6qbWWw-xdfZ8Ic2vLn2U2OgkAFDfelfc&callback=initMap&libraries=places"></script>
+
+</body>
+
+<html>

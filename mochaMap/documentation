@@ -1,0 +1,43 @@
+README
+
+MochaMap is a web app that allows a user to store their visited, favorited, and
+bucket-listed coffee shops. On the front end, it is a basic HTML/CSS/BootStrap
+app. On the back end, PHP ties it in with a MySQL database.
+Model: MySQL database
+  > PHP to query database
+  > id (primary key)
+  > placeID (primary key in Google Places API)
+  > category (visited, favorite, bucketlist)
+  > visitedDate
+
+View: kellymartin.me/mochaMap
+  > web page with Google Map
+  > coffee shops in database represented as markers in map
+  > clicking on marker displays infowindow with coffee shop info and mochaMap
+    specific info from the database
+  > coffee shops that are not in the database can be searched for
+
+Controller: JavaScript, Google Maps and Places APIs
+  >
+
+Building MochaMap was a great exercise for me. I deepened my understanding of
+the MVC paradigm. I also defined and followed a quasi-agile development process.
+The process entailed: (1) defining scope, (2) writing use cases, (3) writing
+user stories, (4) writing test cases, (5)
+
+Use Cases
+
+1. As a user, I can search for a coffee shop.
+  - type in search box
+  - autocomplete
+  - must select a shop from the autocomplete list
+2. As a user, I can add a coffee shop to my mochaMap.
+3. As a user, I must specify a category for the coffee shop.
+  - visited, favorite, or bucket list
+4. As a user, I must specify a visited date for a visited or favorite coffee shop.
+5. As a user, I see a message when I make an update on MochaMap.
+  - "MochaMAp updated."
+  - new->visited: "You visited a new coffee shop!"
+  - new->bucketlist: "Bucket list coffee shop added!"
+  - existing bucketlist->visited, favorite: "You marked off a bucket list coffee shop!"
+  - anytime favorite: "That coffee must have been good!"
