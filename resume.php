@@ -11,11 +11,17 @@
     <div class="row skills">
       <div class="skillSection col-sm-4">
         <center><h6>Front-End Languages</h6></center>
-        <p>> JavaScript</p>
-        <p>> jQuery</p>
-        <p>> Bootstrap</p>
-        <p>> HTML/HTML5</p>
-        <p>> CSS/CSS3</p>
+        <div class="row">
+          <div class="col-6">
+            <p>> JavaScript</p>
+            <p>> jQuery</p>
+            <p>> Bootstrap</p>
+          </div>
+          <div class="col-6">
+            <p>> HTML/HTML5</p>
+            <p>> CSS/CSS3</p>
+          </div>
+        </div>
       </div>
       <div class="skillSection col-sm-4">
         <center><h6>Back-End Languages</h6></center>
@@ -24,11 +30,19 @@
         <p>> Python</p>
       </div>
       <div class="skillSection col-sm-4">
-        <h6><center>Familiar with</center></h6>
-        <p>> RESTful APIs</p>
-        <p>> ReactJS</p>
-        <p>> NodeJS</p>
-        <p>> Ruby on Rails</p>
+        <h6><center>Also familiar with</center></h6>
+        <div class="row">
+          <div class="col-6">
+            <p>> RESTful APIs</p>
+            <p>> Java</p>
+            <p>> C++</p>
+          </div>
+          <div class="col-6">
+            <p>> ReactJS</p>
+            <p>> NodeJS</p>
+            <p>> Ruby on Rails</p>
+          </div>
+        </div>
       </div>
     </div>
     <p class="smaller">You can also <a href="files/MartinKellyResume.pdf" target="_blank">view my resume</a> or <a href="portfolio">check out my portfolio</a>.</p>

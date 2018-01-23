@@ -1,7 +1,7 @@
 <?php
 
 // left to do:
-// adding diary text to diary column of users table in real time (use session email variable to determine where to insert in table)\
+// adding diary text to diary column of users table in real time (use session email variable to determine where to insert in table)
 
 	// start the session
 	session_start();
@@ -22,7 +22,7 @@
 	}
 	else if ( (array_key_exists("id", $_SESSION) && $_SESSION['id']) || (array_key_exists("id", $_COOKIE) && $_COOKIE['id']) ) {
 		// if there is an existing session or cookie, redirect them to the diary entry page
-		header("Location: index.php");
+		header("Location: diary.php");
 	}
 
 	// only do all this stuff if they have pressed the submit button
@@ -34,12 +34,10 @@
 		// Check for required fields (email, password)
 		// Set error message if anything is missing
 		// Else, set variables
-		if ( !empty($_POST['email']) )
-			 { $email = $_POST['email']; }
+		if ( !empty($_POST['email']) ) { $email = $_POST['email']; }
 		else { $errorMessage .= "An email is required.<br>"; }
 
-		if ( !empty($_POST['password']) )
-			 { $password = $_POST['password']; }
+		if ( !empty($_POST['password']) ) { $password = $_POST['password']; }
 		else { $errorMessage .= "A password is required.<br>"; }
 
 		// display error message if anything is missing
@@ -78,7 +76,7 @@
 								setcookie("id", mysqli_insert_id($link), time() + 60 * 60 * 24 * 365 * 10);
 							}
 							// redirect them to the diary entry page
-							header("Location: index.php");
+							header("Location: diary.php");
 					}
 					else {
 						$errorMessage = "<div class='alert alert-danger'>There was an error in registering your account. Please try again later.</div>";
@@ -117,7 +115,7 @@
 							setcookie("id", $getPasswordResultRow['id'], time() + 60 * 60 * 24 * 365 * 10);
 						}
 						// redirect them to the diary entry page
-						header("Location: index.php");
+						header("Location: diary.php");
 					}
 					// display error if password_verify() fails
 					else {
@@ -138,7 +136,7 @@
 ?>
 
 	<div class="container" id="loginPageContainer">
-		<h1>Secret Diary</h1>
+		<a id="headerLink" href="login.php"><h1 class="logo">Secret Diary</h1></a>
 		<p><strong>Store your thoughts permanently and securely.</strong></p>
 
 		<div id="alert">
@@ -146,47 +144,30 @@
 		</div>
 
 		<form method="post" id="signUpForm">
-
 			<p>Interested? Sign up now.</p>
-
-			<input id="email" type="email" name="email" placeholder="Your Email" class="form-control form-spacing">
-
-			<input id="password" type="password" name="password" placeholder="Password" class="form-control form-spacing">
-
+			<input id="signUpEmail" type="email" name="email" placeholder="Your Email" class="form-control form-spacing">
+			<input id="signUpPassword" type="password" name="password" placeholder="Password" class="form-control form-spacing">
 			<input class="form-spacing" type="checkbox" name="stayLoggedIn" value="1"> Stay logged in<br>
-
 			<input type="hidden" name="signUp" value="1">
-
 			<input id="signup_submit" name="submit" type="submit" class="form-spacing btn btn-success" value="Sign Up!">
-
 			<p class="form-spacing"><a class="toggleForms">Log in</a></p>
-
 		</form>
 
 		<form method="post" id="logInForm">
-
 			<p>Log in with your username and password.</p>
-
-			<input id="email" type="email" name="email" placeholder="Your Email" class="form-control form-spacing">
-
-			<input id="password" type="password" name="password" placeholder="Password" class="form-control form-spacing">
-
+			<input id="logInEmail" type="email" name="email" placeholder="Your Email" class="form-control form-spacing">
+			<input id="logInPassword" type="password" name="password" placeholder="Password" class="form-control form-spacing">
 			<input class="form-spacing" type="checkbox" name="stayLoggedIn" value="1"> Stay logged in<br>
-
 			<input type="hidden" name="signUp" value="0">
-
 			<input id="login_submit" name="submit" type="submit" class="form-spacing btn btn-success" value="Log In!">
-
 			<p class="form-spacing"><a class="toggleForms">Sign up</a></p>
-
 		</form>
 
 	</div>
 
-
 <?php
 
 	// Contains the jQuery, JavaScript, and AJAX scripts for the secret diary application
-	include("scripts.php");
+	include("footer.html");
 
 ?>

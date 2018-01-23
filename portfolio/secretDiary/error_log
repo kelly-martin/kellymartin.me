@@ -1,0 +1,1 @@
+[17-Jan-2018 12:06:07 America/Chicago] PHP Warning:  mysqli_connect(): (HY000/2005): Unknown MySQL server host 'shareddb1e.hosting.stackcp.net' (0) in /home2/kellymartin/public_html/portfolio/secretDiary/connectToDatabase.php on line 3

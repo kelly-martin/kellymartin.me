@@ -9,17 +9,17 @@
     <div class="row">
       <div id="headshotDiv"><img id="headshot2" src="files/headshot2.jpg"></div>
       <div id="quickFacts">
-        <p>I'm obsessed with coffee. <img tabindex="0" class="icon" src="files/popover.svg"
-            data-toggle="popover" data-html="true" data-trigger="focus" data-content="One could say I'm a <em>caff-fiend</em>.
-            <br>Check out <a href='mochaMaps'>this cool coffee-related web app</a> I made."></p>
-        <p>I'm a minimalist. <img tabindex="0" class="icon" src="files/popover.svg"
-          data-toggle="popover" data-trigger="focus" data-content="I have about 60 total
-          possessions, from clothes to kitchenware, from big to small, from functional to whimsical."></p>
         <p>I live in Denver, CO. <img tabindex="0" class="icon" src="files/popover.svg"
           data-toggle="popover" data-trigger="focus" data-content="Being near the Rocky Mountains has made me
           fall in love with hiking and backpacking. I also love to run and bike."></p>
+        <p>I'm a minimalist. <img tabindex="0" class="icon" src="files/popover.svg"
+          data-toggle="popover" data-trigger="focus" data-content="I have about 60 total
+          possessions, from clothes to kitchenware, from big to small, from functional to whimsical."></p>
+        <p>I'm obsessed with coffee. <img tabindex="0" class="icon" src="files/popover.svg"
+          data-toggle="popover" data-html="true" data-trigger="focus" data-content="One could say I'm a <em>caff-fiend</em>.
+          <br>Check out <a href='/portfolio/mochaMap' target='_blank'>this cool coffee-related web app</a> I made."></p>
         <p>I love to create with code. <img tabindex="0" class="icon" src="files/popover.svg"
-          data-toggle="popover" data-html="true" data-trigger="focus" data-content="More about that <a href='webdev'>here</a>."></p>
+          data-toggle="popover" data-html="true" data-trigger="focus" data-content="Check out my coding skills <a href='resume'>here</a> or explore my <a href='portfolio'>portfolio</a>."></p>
       </div>
     </div>
     <hr>
@@ -43,7 +43,7 @@
       the other in aerospace on the west coast. These experiences gave me valuable
       insight into the kind of work I wanted to do as well as where I wanted to live.
     </p>
-    <p><center><img id="states" class="img-fluid" src="files/states.svg" alt="Cincinnati, OH -> Clemson, SC -> Denver, CO"></center></p>
+
     <p>
       I accepted a job with a large telecommunications company during my senior
       year and moved to Denver, CO in July 2016. I worked at that company as a

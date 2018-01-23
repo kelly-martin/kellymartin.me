@@ -92,37 +92,16 @@ a.nav-link:hover {
 
 #states { width: 600px; height: auto; }
 
+img.portfolioThumbnail {
+  width: 100%;
+  height: auto;
+  opacity:0.7;
+  border-radius: 5px;
+}
+
+img.portfolioThumbnail:hover { opacity: 0.3; }
+
 .body { margin-bottom: 100px; }
-
-#mochaMap {
-  margin: 10px 0;
-  width:100%;
-  height:500px;
-}
-
-#mapSearch {
-  background-color: #fff;
-  border-radius: 2px;
-  border: 1px solid transparent;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  box-sizing: border-box;
-  font-family: 'Anaheim', sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  width: 50%;
-  height: 29px;
-  margin-left: 17px;
-  margin-top: 10px;
-  outline: none;
-  padding: 0 11px 0 13px;
-  text-overflow: ellipsis;
-}
-
-.title { font-weight: bold; }
-
-#alertDiv { display: none; }
-
-#mocha-map #infowindow-content { display: inline; }
 
 .skillSection {
   background-color: #ad3511;
