@@ -1,3 +1,5 @@
+/* Media query for resizing image and
+text layout on 'About Me' page */
 @media (max-width:767px) {
   #headshotDiv { margin: 0 auto; }
   #quickFacts {
@@ -6,8 +8,19 @@
   }
 }
 
-.stickyNavbar {
-  position: fixed !important;
+/* This id is applied to the <body> tag in the header
+so I am able to override bootstrap defaults without
+using !important all over the place */
+#overrides {
+  font-family: 'Anaheim', sans-serif;
+  color: black;
+}
+
+/* This class is added to the #navbar element when the
+user scrolls down a page, so that the navbar sticks to
+the top */
+#navbar.stickyNavbar {
+  position: fixed;
   top: 0;
   width:100%;
   background-color: white;
@@ -15,21 +28,13 @@
   z-index:999;
 }
 
+/* Each page starts with a main container div, this
+adds padding to the top of that div so the page
+doesn't "jump" when the page is scrolled and the
+navbar becomes sticky */
 .stickyNavbar + .container { padding-top: 70px; }
 
-#overrides {
-  font-family: 'Anaheim', sans-serif;
-  color: black;
-}
-
-p { font-size: 110%; }
-
-.smaller { font-size: 90%; }
-
-#overrides h2 { font-weight: bold; }
-
-#overrides h4 { font-style: italic; }
-
+/* Styling of the navbar logo */
 #overrides a.navbar-brand {
   font-family: 'Permanent Marker', cursive;
   font-size: 170%;
@@ -37,72 +42,75 @@ p { font-size: 110%; }
   color: black;
 }
 
-#overrides .btn-primary {
-  background-color: #ad3511;
-  border-color: white;
-  font-size: 90%;
-}
-
-#overrides .btn-primary.focus {
-  outline: none;
-  box-shadow:none;
-}
-
-#overrides .btn-primary.active {
-  background-color: #7A0200;
-  border-color: white;
-}
-
-a.nav-link:hover {
+/* Styling of hover behavior for navbar links */
+#overrides a.nav-link:hover {
   border-bottom: 2px solid #ad3511;
 }
 
-#overrides p a { color: #ad3511; }
+/* General formatting specs. #overrides
+is used to override Bootstrap styles */
+p { font-size: 110%; }
+.smaller { font-size: 90%; }
+#overrides h2 { font-weight: bold; }
+#overrides h4 { font-style: italic; }
+.row { padding: 10px; }
 
+/* Specs for style of links. #overrides
+is used to override Bootstrap styles */
+#overrides p a { color: #ad3511; }
 #overrides p a:hover {
   color: #7A0200;
   text-decoration: none;
 }
 
-.row { padding: 10px; }
+/* Specs for style of buttons. #overrides
+is used to override Bootstrap styles */
+#overrides .btn-primary {
+  background-color: #ad3511;
+  border-color: white;
+  font-size: 90%;
+}
+#overrides .btn-primary.focus {
+  outline: none;
+  box-shadow:none;
+}
+#overrides .btn-primary.active {
+  background-color: #7A0200;
+  border-color: white;
+}
 
+/* Specs for headshot on home page */
 #headshot {
   width: 1000px;
   height: auto;
   border-radius: 10px;
 }
 
-#headshotDiv {
-  margin-left: auto;
-}
-
+/* Specs for photo and high level facts on
+'About Me' page */
+#headshotDiv { margin-left: auto; }
 #headshot2 {
   width:250px;
   height:auto;
   border-radius: 50%;
 }
-
 #quickFacts {
   padding: 30px 0 10px 20px;
   margin-right: auto;
   font-size: 135%;
 }
 
-.icon { width: 20px; height: 20px; }
-
-#states { width: 600px; height: auto; }
-
-img.portfolioThumbnail {
-  width: 100%;
-  height: auto;
-  opacity:0.7;
-  border-radius: 5px;
+/* Specs for popover icons (and any links within them)
+that appear on both 'About Me' and 'Skills' pages */
+.popoverIcon { width: 20px; height: 20px; }
+a.popoverLink { color: #ad3511; }
+a.popoverLink:hover {
+  color: #7A0200;
+  text-decoration: none;
 }
 
-img.portfolioThumbnail:hover { opacity: 0.3; }
-
-.body { margin-bottom: 100px; }
-
+/* Specs for orange blocks showing my
+coding languages on 'Skills' page */
 .skillSection {
   background-color: #ad3511;
   border-radius: 10px;
@@ -113,6 +121,19 @@ img.portfolioThumbnail:hover { opacity: 0.3; }
   font-weight: bold;
 }
 
+/* Specs for images on 'Portfolio' page */
+img.portfolioThumbnail {
+  width: 100%;
+  height: auto;
+  opacity:0.7;
+  border-radius: 5px;
+}
+img.portfolioThumbnail:hover { opacity: 0.3; }
+
+/* Specs for sticky website footer.
+Margin must be added so footer does
+not cover content at bottom of page */
+.body { margin-bottom: 100px; }
 .footer {
   position: fixed;
   bottom: 0;
@@ -122,9 +143,7 @@ img.portfolioThumbnail:hover { opacity: 0.3; }
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
 .footer div.container { text-align: center; }
-
 .footer img {
   width: 40px;
   height: 40px;
